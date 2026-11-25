@@ -13,5 +13,5 @@ Zertifikate
 Kontaktinformationen
 Autor
 # Atena Fayazi
- https://atena26.github.io/Portfolio​‌
+https://atena26.github.io/Portfolio/​‌
 
