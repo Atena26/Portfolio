@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PORTFOLIO | ATENA </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body{
+                color:white;
+                margin: 0;
+            }
+            header{
+                position: absolute;
+                top: 30px;
+                left:50%;
+                transform:translateX(-50%);
+                z-index: 10;
+            }
+            nav{
+                display: flex;
+                gap:20px;
+                align-items: center;
+            }
+            nav button{
+                border: none;
+                background:white ;
+                padding : 12px 15px;
+                border-radius: 12px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 500;
+                transition: 0.3s;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+                width: 127px;
+                color: #0f765e;
+            }
+            nav button:hover{
+                background: #0f765e;
+                color: white;
+            }
+            .hero{
+                display: flex;
+                position: relative;
+                align-items: center;
+                min-height: 100vh;
+                overflow: hidden;
+            }
+            .left{
+                width: 50%;
+                height: 100vh;
+                border-right:none;
+                position: relative;
+                z-index: 2;
+                padding: 0px;
+                display: flex;
+            }
+            .left img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+                object-position: center top;
+                display: block;
+            
+            }
+            .right{
+                width: 50%;
+                height: 100vh;
+                position: relative;
+                overflow: hidden;
+                z-index: 2;
+            }
+            .right h2{
+                font-size: 35px;
+                color: white;
+                letter-spacing: 5px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            .right h3 {
+                font-size: 30px;
+                font-weight: 400;
+                color: white;
+                margin: bottom 40; 
+
+            }
+            .right p {
+                font-weight: 200;
+                font-size: 20px;
+                line-height: 1.6;
+                color: white;
+                max-width: 500px;
+                margin-bottom: 0;
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.45);
+                z-index: 1;
+            }
+            .content{
+                position: relative;
+                z-index: 2;
+                color: white;
+                padding: 80px;
+            }
+            .background-video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 0;
+
+            }
+            .left,
+            .right{
+             position: relative;
+             z-index: 2;
+             border-right: none;
+            }
+            html{
+
+    scroll-behavior:smooth;
+            }
+.page-section{
+
+   min-height:auto;
+   padding:60px 80px;
+   background:#0f765e;
+   text-align: center;
+   margin-bottom: 5px;
+
+}
+    .footer-buttons.footer-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+       .contact-btn{
+        border: none;
+                background:white ;
+                padding : 12px 15px;
+                border-radius: 12px;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: 500;
+                transition: 0.3s;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+                width: 127px;
+                color: #0f765e;
+       }
+ 
+.contact-btn:hover{
+   background:#0f765e;
+   color:white;
+} 
+.buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        size: 12px 15px;
+        text-align: center;
+    }
+    .buttons a{
+        background: #1f4e79;
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    .buttons a:hover {
+        background: #163a5c;
+    }
+    .Zertifikate {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        size: 12px 15px;
+        text-align: center;
+    }
+    .Zertifikate a{
+        background: #1f4e79;
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 10px;
+        transition: 0.3s;}
+    .Zertifikate a:hover {
+        background: #163a5c;
+    }
+    .Bildung{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        size: 12px 15px;
+        text-align: center;
+    }
+    .Bildung a{
+        background: #1f4e79;
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 10px;
+        transition: 0.3s;}
+    .Bildung a:hover {
+        background: #163a5c;
+    }
+    .Kontakt-Daten{
+        
+         display: flex;
+        flex-direction: column;
+        gap: 15px;
+        size: 12px 15px;
+        text-align: center;
+    }
+    .Kontakt-Daten a{
+        background: #1f4e79;
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 10px;
+        transition: 0.3s;}
+
+        .Kontakt-Daten a:hover{
+         background: #163a5c;
+        }
+        .ulfeahigkeit{
+        display: flex;
+        gap: 15px;
+        list-style: none;
+        justify-content: center;
+        }
+        .ulfeahigkeit li {
+        background: #1f4e79;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+        width: 120px;
+        height: 40px;
+        }
+        
+       
+    
+        </style>
+    </head>
+    <body>
+    <section class="hero">
+        <video class="background-video" autoplay muted loop playsinline ><source src="video/Videoprojekt.mp4" type="video/MP4"></video>
+            <div class="overlay"></div>
+        <div class="left">
+            <img src="image/Resume.jpg" alt="Resume Foto">
+        </div>
+        <div class="right">
+            <header>
+            <nav>
+            <button onclick="document.getElementById('uebermich').scrollIntoView({behavior:'smooth'})">Über mich
+           </button>
+            <button onclick="document.getElementById('Bildung').scrollIntoView({behavior:'smooth'})">Bildung
+             </button>
+            <button onclick="document.getElementById('Zertifikate').scrollIntoView({behavior:'smooth'})">Zertifikate
+            </button>
+        </nav>
+        <header>
+            <div class="footer-buttons">
+        <button class="contact-btn" onclick="document.getElementById('Kontakte').scrollIntoView({behavior:'smooth'})">Kontakt</button>
+        <button class="contact-btn" onclick="document.getElementById('datenschutz').scrollIntoView({behavior:'smooth'})">Datenschutz</button>
+        </div>  
+        <div class="content">
+            <h2>PORTFOLIO</h2>
+            <h2>ATENA</h2>
+            <br>
+            <h3>Umschülerin zur Fachinformatikerin für Anwendungsentwicklung</h3>
+            <br>
+            <p>Willkommen auf meinem Portfolio.</p>
+
+            <p>
+             Ich befinde mich derzeit in einer Umschulung zur 
+             Fachinformatikerin für Anwendungsentwicklung und erweitere 
+             täglich meine Kenntnisse in der Softwareentwicklung.
+            </p>
+
+            <p>
+    Ich interessiere mich besonders für moderne Webtechnologien, 
+    sauberen Code und kreative Lösungen.
+            </p>
+            </div>
+            </div>
+        </section>
+        <section id="uebermich" class="page-section">
+            <h2>Über mich</h2>
+            <br>
+            <p>Auf dieser Seite finden Sie einen Einblick in meinem Lebenslauf ,meine Ausbildung ,meine Fähigkeiten und meinen bisherigen Erfahrungen.</p>
+            <br>
+            <div class="buttons">
+    <a href="Unterlagen/Mein Lebenslauf.pdf" target="_blank">Lebenslauf</a>
+    
+    </div>
+        </section>
+        <section id="Bildung" class="page-section">
+       <h2>Bildung</h2>
+       <br>
+        <p>
+       Mein Bildungsweg auf einen Blick
+       </p>
+       <br>
+       <div class="Bildung">
+        <a href="target="_blank>Anerkennung Hochschulreife</a>
+       </div>
+      </section>
+      <section id="Zertifikate" class="page-section">
+       <h2>Zertifikate</h2>
+       <br>
+        <p>
+       Meiner Zertifikate und Weiterbildungen </p>
+        <br>
+        <div class="Zertifikate">
+            <a href="target="_blank>Deutsch B2</a>
+            <a href="Unterlagen/KI-Führerschein-GFN-GmbH.pdf" target="_blank">KI-Führerschein</a>
+            <a href="image/Image.png" target="_blank">Badges experte Bewerbungen-GFN</a>
+            <a href="Unterlagen/Zertifikat_der_GFN_GmbH_Basiswissen.pdf" target="_blank">IT-Basiswissen-GFN</a>
+            <a href="Unterlagen/Zertifikat_der_GFN_GmbH_ Mathe.pdf" target="_blank">IT_Mathe-GFN</a>
+            <a href="Unterlagen/Umschulungszeugnisse.pdf" target="_blank">Umschulungszeugnisse</a>
+        </div>
+      </section>
+      <section id="Kontakte" class="page-section">
+       <h2>Kontakt</h2>
+       <br>
+        <p>
+       Kontaktieren Sie mich gerne für Fragen oder berufliche Möglichkeiten.
+        </p>
+        <br>
+        <div class="Kontakt-Daten"></div>
+        </p>
+        <br>
+        <p>G-Mail-Adresse:
+        <a href="G-mail-Adresse">fayaziatena7@gmail.com </a>
+        </p>
+        <p>
+        GitHub:
+        <a href="https://github.com/Atena26/Portfolio" target="_blank">
+        github.com/Atena26/Portfolio
+        </a>
+        </p>
+      </section>
+      <section id="datenschutz" class="page-section">
+      <h1>Datenschutz</h1>
+      <br>
+      <p>Nutzungshinweis :
+      Die auf dieser Seite veröffentlichten Inhalte und Dokumente sind ausschließlich für berufliche Informations- 
+      und Bewerbungszwecke bestimmt. Eine Weiterverwendung oder Weitergabe an Dritte außerhalb dieses Rahmens ist nicht gestattet.</p>
+      <br>
+      </section>
+      
+    </body>
+</html>
