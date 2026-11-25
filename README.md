@@ -14,8 +14,4 @@ Kontaktinformationen
 Autor
 # Atena Fayazi
 
-# Atena Fayazi
-
-# Atena Fayazi
-
 [Mein Portfolio](https://atena26.github.io/Portfolio/)
